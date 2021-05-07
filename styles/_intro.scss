@@ -1,16 +1,23 @@
+// .intro {
+//   min-height: 60vh;
+//   background: $redGrade;
+//   position: relative;
+//   object-fit: contain;
+//   overflow: hidden;
+
+//   .intro-img {
+//     width: 100%;
+//     position: absolute;
+//     top: -100%;
+//     right: -20%;
+//   }
+// }
+
 .intro {
   min-height: 60vh;
-  background: $redGrade;
-  position: relative;
-  object-fit: contain;
   overflow: hidden;
-
-  .intro-img {
-    width: 100%;
-    position: absolute;
-    top: -100%;
-    right: -20%;
-  }
+  background-image: $redGrade, url("../assets/images/bg-pattern-intro.svg");
+  background-position: left center;
 }
 
 nav {
@@ -53,6 +60,7 @@ nav {
   @include flex(center, center, column);
   color: $whiteText;
   min-height: 50vh;
+  padding-bottom: 10rem;
   h2,
   p,
   .login {
@@ -61,6 +69,8 @@ nav {
   h2 {
     font-size: $header2;
     @include Overpass($weight: 600);
-    padding-bottom: 2rem;
+  }
+  p {
+    padding: 1rem;
   }
 }
