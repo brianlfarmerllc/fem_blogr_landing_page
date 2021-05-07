@@ -1,0 +1,53 @@
+// -----Colors-----
+
+// Primary
+
+$red: hsl(356, 100%, 66%);
+$lightRed: hsl(355, 100%, 74%);
+$darkBlue: hsl(208, 49%, 24%);
+
+// Neutral
+
+$text: hsl(0, 0%, 100%);
+$footerText: hsl(240, 2%, 79%);
+$bodyCopy: hsl(207, 13%, 34%);
+$footerBackground: hsl(240, 10%, 16%);
+
+// Gradient
+
+// Background gradient - Intro/CTA mobile nav:
+
+$redGrade: linear-gradient(to right hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+
+// Background gradient - body:
+
+$blueGrade: linear-gradient(to right hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+// -----Typography-----
+
+$header1: 2.4rem;
+$header2: 2.1rem;
+$header3: 2.1rem;
+$header4: 2rem;
+$text: 1.6rem;
+
+// -----Fonts-----
+
+@mixin Overpass($weight: 300) {
+    font-family: "Overpass", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin Ubuntu($weight: 400) {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: $weight;
+}
+
+// -----Display-----
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
