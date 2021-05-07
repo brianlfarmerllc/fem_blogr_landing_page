@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | [Blogr]</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
-  <title>Frontend Mentor | [Blogr]</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-
-</head>
-
-<body>
-  <section class="intro">
-    <header>
-      <nav>
-        <div class="logo-nav">
-          <a href="#"><img src="./assets/images/logo.svg" alt="company-logo"></a>
+  <body>
+    <!-- Top Intro Section -->
+    <section class="intro">
+      <img
+        class="intro-img"
+        src="./assets/images/bg-pattern-intro.svg"
+        alt=""
+      />
+      <header>
+        <nav>
+          <div class="logo-nav">
+            <a href="#"
+              ><img src="./assets/images/logo.svg" alt="company-logo"
+            /></a>
+            <ul class="main-ul">
+              <li>
+                <a href="#">Product<i class="fas fa-angle-down"></i></a>
+                <ul class="dropUl">
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Intergrations</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Company<i class="fas fa-angle-down"></i></a>
+                <ul class="dropUl">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Connect<i class="fas fa-angle-down"></i></a>
+                <ul class="dropUl">
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="login">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </nav>
+      </header>
+      <div class="intro-text">
+        <h2>A modern publishing platform</h2>
+        <p>Grow your audience and build your online brand</p>
+        <div class="login">
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
         </div>
-      </nav>
-    </header>
-  </section>
+      </div>
+    </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Brian Farmer</a>.
-  </div>
-</body>
-
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Brian Farmer</a>.
+    </div>
+  </body>
 </html>

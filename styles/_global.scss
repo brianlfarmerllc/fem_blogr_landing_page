@@ -1,22 +1,22 @@
 //Set default browser box sizing, margin and padding
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 //Set default pixel size to 10 for easier rem usage
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 // Global Typography Styles
 
 h1 {
-    font-size: $header1;
+  font-size: $header1;
 }
 
 li,
@@ -26,23 +26,24 @@ input,
 textarea,
 a,
 p {
-    font-size: $text;
+  font-size: $text;
+  color: $whiteText;
 }
 
 h2 {
-    font-size: $header2;
+  font-size: $header2;
 }
 h3 {
-    font-size: $header3;
+  font-size: $header3;
 }
 h4,
 h5 {
-    font-size: $header4;
+  font-size: $header4;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: $text;
+  text-decoration: none;
+  color: $whiteText;
 }

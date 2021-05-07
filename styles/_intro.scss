@@ -1,0 +1,66 @@
+.intro {
+  min-height: 60vh;
+  background: $redGrade;
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+
+  .intro-img {
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    right: -20%;
+  }
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 10vh;
+  @include flex(space-between, center, row);
+
+  .logo-nav {
+    @include flex(flex-start, center, row);
+    flex: 4 1 30rem;
+
+    ul {
+      @include flex(space-between, center, row);
+      padding-left: 4rem;
+      z-index: 2;
+      li {
+        padding-left: 2rem;
+        i {
+          padding-left: 1rem;
+        }
+      }
+      .dropUl {
+        display: none;
+      }
+    }
+  }
+
+  .login {
+    @include flex(flex-end, center, row);
+    flex: 1 1 20rem;
+    a {
+      padding: 2rem 4rem;
+      z-index: 2;
+    }
+  }
+}
+
+.intro-text {
+  @include flex(center, center, column);
+  color: $whiteText;
+  min-height: 50vh;
+  h2,
+  p,
+  .login {
+    z-index: 2;
+  }
+  h2 {
+    font-size: $header2;
+    @include Overpass($weight: 600);
+    padding-bottom: 2rem;
+  }
+}
