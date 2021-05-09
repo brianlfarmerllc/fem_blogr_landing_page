@@ -28,6 +28,7 @@ a,
 p {
   font-size: $text;
   color: $whiteText;
+  @include Ubuntu(400);
 }
 
 h2 {

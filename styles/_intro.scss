@@ -22,6 +22,9 @@ nav {
       padding-left: 4rem;
       li {
         padding-left: 2rem;
+        &:hover {
+          text-decoration: underline;
+        }
         img {
           padding-left: 1rem;
         }
@@ -45,6 +48,11 @@ nav {
       text-decoration: none;
       cursor: pointer;
       text-align: center;
+      &:hover {
+        background: $lightRed;
+        color: $whiteText;
+        border: solid thin $lightRed;
+      }
     }
     .active {
       @include active(white, $red);
@@ -77,6 +85,11 @@ nav {
       text-decoration: none;
       cursor: pointer;
       text-align: center;
+      &:hover {
+        background: $lightRed;
+        color: $whiteText;
+        border: solid thin $lightRed;
+      }
     }
     .active {
       @include active(white, $red);

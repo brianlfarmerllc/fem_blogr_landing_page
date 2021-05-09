@@ -26,6 +26,8 @@ a,
 p {
   font-size: 1.6rem;
   color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
 }
 
 h2 {
@@ -125,6 +127,10 @@ nav .logo-nav ul li {
   padding-left: 2rem;
 }
 
+nav .logo-nav ul li:hover {
+  text-decoration: underline;
+}
+
 nav .logo-nav ul li img {
   padding-left: 1rem;
 }
@@ -162,6 +168,12 @@ nav .login button {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
+}
+
+nav .login button:hover {
+  background: #ff7a85;
+  color: white;
+  border: solid thin #ff7a85;
 }
 
 nav .login .active {
@@ -212,6 +224,12 @@ nav .login .active {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
+}
+
+.intro-text .intro-links button:hover {
+  background: #ff7a85;
+  color: white;
+  border: solid thin #ff7a85;
 }
 
 .intro-text .intro-links .active {
@@ -378,6 +396,7 @@ footer {
   min-height: 50vh;
   background: #25252d;
   padding-top: 5rem;
+  border-top-right-radius: 100px 60px;
 }
 
 footer nav {
@@ -434,6 +453,10 @@ footer nav .footer-ul li .ul {
 
 footer nav .footer-ul li .ul li {
   padding: 1rem 0rem;
+}
+
+footer nav .footer-ul li .ul li:hover {
+  text-decoration: underline;
 }
 
 footer nav .footer-ul li .ul li a {
