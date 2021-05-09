@@ -1,0 +1,32 @@
+footer {
+  min-height: 50vh;
+  background: $footerBackground;
+  padding-top: 5rem;
+
+  nav {
+    @include flex(start, start, row);
+
+    .logo-nav {
+      flex: 1 1 15rem;
+    }
+
+    .footer-ul {
+      flex: 4 1 15rem;
+      padding-top: 1rem;
+      @include flex(start, start, row);
+      li {
+        flex: 1 1 15rem;
+        .ul {
+          padding-top: 3rem;
+
+          li {
+            padding: 1rem 0rem;
+            a {
+              color: $footerText;
+            }
+          }
+        }
+      }
+    }
+  }
+}

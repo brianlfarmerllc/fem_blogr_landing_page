@@ -1,0 +1,28 @@
+.bottomSection {
+  min-height: 110vh;
+  background-image: url("../assets/images/illustration-laptop-desktop.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: -35% center;
+}
+
+.bottomContainer {
+  min-height: 110vh;
+  width: 85%;
+  margin: 0 auto;
+  @include flex(space-between, center, row);
+  .empty {
+    flex: 1 1 30rem;
+  }
+  .tsText {
+    flex: 1 1 30rem;
+    @include flex(center, start, column);
+
+    p {
+      color: $bodyCopy;
+      padding-top: 2rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
