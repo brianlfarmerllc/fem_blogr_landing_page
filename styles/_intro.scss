@@ -1,27 +1,14 @@
-// .intro {
-//   min-height: 60vh;
-//   background: $redGrade;
-//   position: relative;
-//   object-fit: contain;
-//   overflow: hidden;
-
-//   .intro-img {
-//     width: 100%;
-//     position: absolute;
-//     top: -100%;
-//     right: -20%;
-//   }
-// }
-
 .intro {
   min-height: 60vh;
   overflow: hidden;
   background-image: $redGrade, url("../assets/images/bg-pattern-intro.svg");
+  background-size: 140%;
   background-position: left center;
+  border-bottom-left-radius: 100px 60px;
 }
 
 nav {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   min-height: 10vh;
   @include flex(space-between, center, row);
@@ -33,7 +20,6 @@ nav {
     ul {
       @include flex(space-between, center, row);
       padding-left: 4rem;
-      z-index: 2;
       li {
         padding-left: 2rem;
         i {
@@ -49,9 +35,19 @@ nav {
   .login {
     @include flex(flex-end, center, row);
     flex: 1 1 20rem;
-    a {
-      padding: 2rem 4rem;
-      z-index: 2;
+    button {
+      border: none;
+      background: none;
+      min-width: 120px;
+      padding: 1rem 2rem;
+      margin: 0 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .active {
+      @include active(white, $red);
     }
   }
 }
@@ -61,16 +57,31 @@ nav {
   color: $whiteText;
   min-height: 50vh;
   padding-bottom: 10rem;
-  h2,
-  p,
-  .login {
-    z-index: 2;
-  }
   h2 {
     font-size: $header2;
-    @include Overpass($weight: 600);
+    @include Overpass($weight: 300);
   }
   p {
     padding: 1rem;
   }
+  .intro-links {
+    margin-top: 3rem;
+
+    button {
+      border: solid thin white;
+      background: none;
+      min-width: 140px;
+      padding: 1rem 2rem;
+      margin: 0 1rem;
+      border-radius: 25px;
+      text-decoration: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .active {
+      @include active(white, $red);
+    }
+  }
 }
+
+// toggle classes

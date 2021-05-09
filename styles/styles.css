@@ -29,7 +29,7 @@ p {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 4.8rem;
 }
 
 h3 {
@@ -55,11 +55,13 @@ a {
   overflow: hidden;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.9)), to(rgba(255, 61, 84, 0.9))), url("../assets/images/bg-pattern-intro.svg");
   background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../assets/images/bg-pattern-intro.svg");
+  background-size: 140%;
   background-position: left center;
+  border-bottom-left-radius: 100px 60px;
 }
 
 nav {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   min-height: 10vh;
   display: -webkit-box;
@@ -111,7 +113,6 @@ nav .logo-nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-left: 4rem;
-  z-index: 2;
 }
 
 nav .logo-nav ul li {
@@ -145,9 +146,21 @@ nav .login {
           flex: 1 1 20rem;
 }
 
-nav .login a {
-  padding: 2rem 4rem;
-  z-index: 2;
+nav .login button {
+  border: none;
+  background: none;
+  min-width: 120px;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+nav .login .active {
+  background: white;
+  color: #ff525d;
 }
 
 .intro-text {
@@ -169,20 +182,35 @@ nav .login a {
   padding-bottom: 10rem;
 }
 
-.intro-text h2,
-.intro-text p,
-.intro-text .login {
-  z-index: 2;
-}
-
 .intro-text h2 {
-  font-size: 3.5rem;
+  font-size: 4.8rem;
   font-family: "Overpass", sans-serif;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .intro-text p {
   padding: 1rem;
+}
+
+.intro-text .intro-links {
+  margin-top: 3rem;
+}
+
+.intro-text .intro-links button {
+  border: solid thin white;
+  background: none;
+  min-width: 140px;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.intro-text .intro-links .active {
+  background: white;
+  color: #ff525d;
 }
 
 .attribution {

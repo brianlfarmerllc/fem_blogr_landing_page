@@ -30,7 +30,7 @@ $blueGrade: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 // -----Typography-----
 
 $header1: 2.4rem;
-$header2: 3.5rem;
+$header2: 4.8rem;
 $header3: 2.1rem;
 $header4: 2rem;
 $text: 1.6rem;
@@ -54,4 +54,10 @@ $text: 1.6rem;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
+}
+
+// -----Toggle Classes-----
+@mixin active($background, $color) {
+  background: $background;
+  color: $color;
 }
