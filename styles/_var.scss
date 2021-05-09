@@ -17,11 +17,7 @@ $footerBackground: hsl(240, 10%, 16%);
 
 // Background gradient - Intro/CTA mobile nav:
 
-$redGrade: linear-gradient(
-  to right,
-  hsla(13, 100%, 72%, 0.9),
-  hsla(353, 100%, 62%, 0.9)
-);
+$redGrade: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
 
 // Background gradient - body:
 
@@ -29,9 +25,9 @@ $blueGrade: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 
 // -----Typography-----
 
-$header1: 2.4rem;
-$header2: 4.8rem;
-$header3: 2.1rem;
+$header1: 4.8rem;
+$header2: 3.5rem;
+$header3: 2.8rem;
 $header4: 2rem;
 $text: 1.6rem;
 

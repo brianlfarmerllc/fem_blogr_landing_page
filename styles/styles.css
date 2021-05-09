@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 4.8rem;
 }
 
 li,
@@ -29,11 +29,17 @@ p {
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 3.5rem;
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 2.1rem;
+  font-size: 2.8rem;
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
 }
 
 h4,
@@ -53,8 +59,8 @@ a {
 .intro {
   min-height: 60vh;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.9)), to(rgba(255, 61, 84, 0.9))), url("../assets/images/bg-pattern-intro.svg");
-  background-image: linear-gradient(to right, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url("../assets/images/bg-pattern-intro.svg");
+  background-image: url("../assets/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: url("../assets/images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-size: 140%;
   background-position: left center;
   border-bottom-left-radius: 100px 60px;
@@ -119,7 +125,7 @@ nav .logo-nav ul li {
   padding-left: 2rem;
 }
 
-nav .logo-nav ul li i {
+nav .logo-nav ul li img {
   padding-left: 1rem;
 }
 
@@ -182,7 +188,7 @@ nav .login .active {
   padding-bottom: 10rem;
 }
 
-.intro-text h2 {
+.intro-text h1 {
   font-size: 4.8rem;
   font-family: "Overpass", sans-serif;
   font-weight: 300;
@@ -211,6 +217,100 @@ nav .login .active {
 .intro-text .intro-links .active {
   background: white;
   color: #ff525d;
+}
+
+.topSection {
+  min-height: 110vh;
+  background-image: url("../assets/images/illustration-editor-desktop.svg");
+  background-size: 57%;
+  background-repeat: no-repeat;
+  background-position: 135% center;
+}
+
+.topSection h2 {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.tsText {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tsText .text {
+  padding-top: 5rem;
+}
+
+.tsText p {
+  color: #4b5862;
+  padding-top: 2rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.middleSection {
+  background-image: url(../assets/images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+  background-image: url(../assets/images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
+  background-repeat: no-repeat;
+  background-position: -60% 80%;
+  max-height: 50vh;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-height: 50vh;
+}
+
+.container .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  padding-top: 5rem;
+}
+
+.container .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.container .text h3 {
+  color: white;
+}
+
+.container .text p {
+  padding-top: 2rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.1rem;
+  color: white;
 }
 
 .attribution {

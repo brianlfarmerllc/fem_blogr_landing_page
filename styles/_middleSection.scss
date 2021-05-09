@@ -1,0 +1,31 @@
+.middleSection {
+  background-image: url(../assets/images/bg-pattern-circles.svg), $blueGrade;
+  background-repeat: no-repeat;
+  background-position: -60% 80%;
+  max-height: 50vh;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  @include flex(space-between, center, row);
+  max-height: 50vh;
+
+  .img {
+    flex: 1 1 30rem;
+    padding-top: 5rem;
+  }
+
+  .text {
+    flex: 1 1 30rem;
+    h3 {
+      color: $whiteText;
+    }
+    p {
+      padding-top: 2rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.1rem;
+      color: $whiteText;
+    }
+  }
+}
