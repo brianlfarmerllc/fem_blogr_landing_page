@@ -14,23 +14,38 @@ nav {
   @include flex(space-between, center, row);
 
   .logo-nav {
-    @include flex(flex-start, center, row);
+    @include flex(start, center, row);
     flex: 4 1 30rem;
 
     ul {
-      @include flex(space-between, center, row);
-      padding-left: 4rem;
+      @include flex(start, center, row);
+      // padding-left: 4rem;
       li {
-        padding-left: 2rem;
+        margin-left: 6rem;
+        position: relative;
         &:hover {
           text-decoration: underline;
         }
         img {
           padding-left: 1rem;
         }
-      }
-      .dropUl {
-        display: none;
+        .active {
+          padding-right: 1rem;
+          padding-left: 0;
+          transform: rotate(180deg);
+        }
+        .dropUl {
+          li {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            a {
+              color: black;
+            }
+          }
+        }
+        .dropUL-inactive {
+          display: none;
+        }
       }
     }
   }
