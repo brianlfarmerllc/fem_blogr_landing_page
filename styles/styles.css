@@ -179,6 +179,12 @@ nav .logo-nav .main-ul .dropUl li a {
   color: black;
 }
 
+nav .logo-nav .main-ul .dropUl li a:hover {
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
 nav .login {
   display: -webkit-box;
   display: -ms-flexbox;

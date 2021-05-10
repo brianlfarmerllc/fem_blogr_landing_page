@@ -61,6 +61,10 @@ nav {
           margin: 3rem 5rem 3rem 3rem;
           a {
             color: black;
+            &:hover {
+              text-decoration: underline;
+              @include Ubuntu(500);
+            }
           }
         }
       }
