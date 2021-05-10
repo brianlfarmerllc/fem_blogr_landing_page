@@ -10,41 +10,58 @@
 nav {
   width: 85%;
   margin: 0 auto;
-  min-height: 10vh;
+  min-height: 15vh;
   @include flex(space-between, center, row);
 
   .logo-nav {
     @include flex(start, center, row);
-    flex: 4 1 30rem;
+    flex: 1 1 30rem;
 
-    ul {
-      @include flex(start, center, row);
-      // padding-left: 4rem;
-      li {
-        margin-left: 6rem;
+    .company-logo {
+      padding-right: 6rem;
+      flex: 1 1 15rem;
+    }
+
+    .main-ul {
+      @include flex(space-between, center, row);
+      flex: 4 1 15rem;
+
+      .main-li {
+        flex: 1 1 15rem;
         position: relative;
         &:hover {
           text-decoration: underline;
         }
+
         img {
           padding-left: 1rem;
+          pointer-events: none;
+          cursor: default;
         }
         .active {
           padding-right: 1rem;
           padding-left: 0;
           transform: rotate(180deg);
         }
-        .dropUl {
-          li {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            a {
-              color: black;
-            }
+      }
+
+      .dropUL-inactive {
+        display: none;
+      }
+
+      .dropUl {
+        display: block;
+        position: absolute;
+        left: -3rem;
+        background: white;
+        margin-top: 2rem;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.7);
+        li {
+          margin: 3rem 5rem 3rem 3rem;
+          a {
+            color: black;
           }
-        }
-        .dropUL-inactive {
-          display: none;
         }
       }
     }
@@ -52,7 +69,7 @@ nav {
 
   .login {
     @include flex(flex-end, center, row);
-    flex: 1 1 20rem;
+    flex: 2 1 20rem;
     button {
       border: none;
       background: none;
