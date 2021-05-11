@@ -2,32 +2,45 @@
 const login = document.querySelector("#login")
 const links = document.querySelector("#intro-links")
 const navUl = document.querySelector("#main-ul")
-const inactiveUl = document.querySelectorAll("#dropUL-inactive")
-const arrow = document.querySelectorAll("#arrow")
+const navLi = document.querySelectorAll(".main-li")
+const inactiveUl = document.querySelectorAll(".dropUL-inactive")
+const arrow = document.querySelectorAll(".arrow")
 
 // functions
 function toggleActive(event) {
     // function vars
     const target = event.target;
     const childList = event.target.parentElement.children;
-    const img = event.target.children[0];
-    const hiddenUl = event.target.parentElement.children[1];
-    // clear all active classes
-    inactiveUl.forEach(ul => ul.classList.remove("dropUl"));
-    arrow.forEach(img => img.classList.remove("active"));
     // function for targets
     if (target.className != "active" && target.localName === "button") {
         for (const button of childList) {
             button.classList.toggle("active");
         }
-    } else if (target.localName === "a") {
-        img.classList.toggle("active");
+    }
+}
+
+function navOpen(event) {
+    // function vars
+    const target = event.target;
+    const img = event.target.children[0];
+    const hiddenUl = event.target.parentElement.children[1];
+
+    // function for targets
+    if (target.localName === "a" && img.className != "flip arrow active") {
+        inactiveUl.forEach(ul => ul.classList.remove("dropUl"));
+        arrow.forEach(img => img.classList.remove("active"));
+        img.classList.add("active");
+        hiddenUl.classList.toggle("dropUl");
+    }
+    else if (target.localName === "a" && img.className === "flip arrow active") {
+        arrow.forEach(img => img.classList.remove("active"));
         hiddenUl.classList.toggle("dropUl");
     }
 }
+
 
 // events
 
 login.addEventListener("click", toggleActive);
 links.addEventListener("click", toggleActive);
-navUl.addEventListener("click", toggleActive);
+navUl.addEventListener("click", navOpen);

@@ -14,6 +14,7 @@ nav {
   @include flex(space-between, center, row);
 
   .logo-nav {
+    padding: 3rem 0rem;
     @include flex(start, center, row);
     flex: 1 1 30rem;
 
@@ -45,28 +46,44 @@ nav {
         }
       }
 
+      .li1 {
+        padding: 4rem 0rem;
+        &:hover {
+          .flip {
+            padding-right: 1rem;
+            padding-left: 0;
+            transform: rotate(180deg);
+          }
+          .dropUl1 {
+            @include dropMenu();
+          }
+        }
+      }
+
+      .li2 {
+        padding: 4rem 0rem;
+        &:hover {
+          .dropUl2 {
+            @include dropMenu();
+          }
+        }
+      }
+
+      .li3 {
+        padding: 4rem 0rem;
+        &:hover {
+          .dropUl3 {
+            @include dropMenu();
+          }
+        }
+      }
+
       .dropUL-inactive {
         display: none;
       }
 
       .dropUl {
-        display: block;
-        position: absolute;
-        left: -3rem;
-        background: white;
-        margin-top: 2rem;
-        border-radius: 8px;
-        box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.7);
-        li {
-          margin: 3rem 5rem 3rem 3rem;
-          a {
-            color: black;
-            &:hover {
-              text-decoration: underline;
-              @include Ubuntu(500);
-            }
-          }
-        }
+        @include dropMenu();
       }
     }
   }

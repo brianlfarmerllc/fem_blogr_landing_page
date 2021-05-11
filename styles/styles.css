@@ -88,6 +88,7 @@ nav {
 }
 
 nav .logo-nav {
+  padding: 3rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +155,100 @@ nav .logo-nav .main-ul .main-li .active {
   padding-left: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+nav .logo-nav .main-ul .li1 {
+  padding: 4rem 0rem;
+}
+
+nav .logo-nav .main-ul .li1:hover .flip {
+  padding-right: 1rem;
+  padding-left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+nav .logo-nav .main-ul .li1:hover .dropUl1 {
+  display: block;
+  position: absolute;
+  left: -3rem;
+  background: white;
+  margin-top: 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+nav .logo-nav .main-ul .li1:hover .dropUl1 li {
+  margin: 3rem 5rem 3rem 3rem;
+}
+
+nav .logo-nav .main-ul .li1:hover .dropUl1 li a {
+  color: black;
+}
+
+nav .logo-nav .main-ul .li1:hover .dropUl1 li a:hover {
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+nav .logo-nav .main-ul .li2 {
+  padding: 4rem 0rem;
+}
+
+nav .logo-nav .main-ul .li2:hover .dropUl2 {
+  display: block;
+  position: absolute;
+  left: -3rem;
+  background: white;
+  margin-top: 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+nav .logo-nav .main-ul .li2:hover .dropUl2 li {
+  margin: 3rem 5rem 3rem 3rem;
+}
+
+nav .logo-nav .main-ul .li2:hover .dropUl2 li a {
+  color: black;
+}
+
+nav .logo-nav .main-ul .li2:hover .dropUl2 li a:hover {
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+nav .logo-nav .main-ul .li3 {
+  padding: 4rem 0rem;
+}
+
+nav .logo-nav .main-ul .li3:hover .dropUl3 {
+  display: block;
+  position: absolute;
+  left: -3rem;
+  background: white;
+  margin-top: 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+nav .logo-nav .main-ul .li3:hover .dropUl3 li {
+  margin: 3rem 5rem 3rem 3rem;
+}
+
+nav .logo-nav .main-ul .li3:hover .dropUl3 li a {
+  color: black;
+}
+
+nav .logo-nav .main-ul .li3:hover .dropUl3 li a:hover {
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
 }
 
 nav .logo-nav .main-ul .dropUL-inactive {

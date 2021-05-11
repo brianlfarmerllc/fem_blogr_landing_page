@@ -57,3 +57,23 @@ $text: 1.6rem;
   background: $background;
   color: $color;
 }
+
+@mixin dropMenu() {
+  display: block;
+  position: absolute;
+  left: -3rem;
+  background: white;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.7);
+  li {
+    margin: 3rem 5rem 3rem 3rem;
+    a {
+      color: black;
+      &:hover {
+        text-decoration: underline;
+        @include Ubuntu(500);
+      }
+    }
+  }
+}
