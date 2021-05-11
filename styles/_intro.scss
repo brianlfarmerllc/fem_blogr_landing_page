@@ -63,6 +63,11 @@ nav {
       .li2 {
         padding: 4rem 0rem;
         &:hover {
+          .flip {
+            padding-right: 1rem;
+            padding-left: 0;
+            transform: rotate(180deg);
+          }
           .dropUl2 {
             @include dropMenu();
           }
@@ -72,6 +77,11 @@ nav {
       .li3 {
         padding: 4rem 0rem;
         &:hover {
+          .flip {
+            padding-right: 1rem;
+            padding-left: 0;
+            transform: rotate(180deg);
+          }
           .dropUl3 {
             @include dropMenu();
           }

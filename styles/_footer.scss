@@ -22,11 +22,12 @@ footer {
 
           li {
             padding: 1rem 0rem;
-            &:hover {
-              text-decoration: underline;
-            }
+
             a {
               color: $footerText;
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }

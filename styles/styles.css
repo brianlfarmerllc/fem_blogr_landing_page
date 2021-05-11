@@ -197,6 +197,13 @@ nav .logo-nav .main-ul .li2 {
   padding: 4rem 0rem;
 }
 
+nav .logo-nav .main-ul .li2:hover .flip {
+  padding-right: 1rem;
+  padding-left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 nav .logo-nav .main-ul .li2:hover .dropUl2 {
   display: block;
   position: absolute;
@@ -224,6 +231,13 @@ nav .logo-nav .main-ul .li2:hover .dropUl2 li a:hover {
 
 nav .logo-nav .main-ul .li3 {
   padding: 4rem 0rem;
+}
+
+nav .logo-nav .main-ul .li3:hover .flip {
+  padding-right: 1rem;
+  padding-left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 nav .logo-nav .main-ul .li3:hover .dropUl3 {
@@ -596,12 +610,12 @@ footer nav .footer-ul li .ul li {
   padding: 1rem 0rem;
 }
 
-footer nav .footer-ul li .ul li:hover {
-  text-decoration: underline;
-}
-
 footer nav .footer-ul li .ul li a {
   color: #c8c8cb;
+}
+
+footer nav .footer-ul li .ul li a:hover {
+  text-decoration: underline;
 }
 
 .attribution {
