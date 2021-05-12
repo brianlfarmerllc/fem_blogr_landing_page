@@ -114,6 +114,11 @@ nav .logo-nav .company-logo {
           flex: 1 1 15rem;
 }
 
+nav .logo-nav .burger {
+  display: none;
+  cursor: pointer;
+}
+
 nav .logo-nav .main-ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,6 +411,10 @@ nav .login .active {
   padding-bottom: 5rem;
 }
 
+.topSection img {
+  display: none;
+}
+
 .tsText {
   width: 85%;
   margin: 0 auto;
@@ -515,6 +524,10 @@ nav .login .active {
           flex-direction: row;
 }
 
+.bottomContainer img {
+  display: none;
+}
+
 .bottomContainer .empty {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
@@ -616,6 +629,229 @@ footer nav .footer-ul li .ul li a {
 
 footer nav .footer-ul li .ul li a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  p {
+    font-family: "Overpass", sans-serif;
+    font-weight: 300;
+    letter-spacing: default;
+  }
+  .intro {
+    min-height: 90vh;
+    background-size: 375%;
+    background-image: url("../assets/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+    background-image: url("../assets/images/bg-pattern-intro.svg"), linear-gradient(to bottom, #ff8f70, #ff3d54);
+    background-position: 35% 35%;
+  }
+  nav .logo-nav .burger {
+    visibility: visible;
+    display: block;
+  }
+  nav #main-ul {
+    display: none;
+  }
+  nav #login {
+    display: none;
+  }
+  .intro-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 6rem 1.6em 0rem 1.6rem;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 3.8rem;
+    padding-bottom: 1rem;
+  }
+  .intro-text p {
+    font-size: 1.6rem;
+  }
+  .topSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: none;
+    text-align: center;
+    padding-bottom: 20rem;
+  }
+  .topSection h2 {
+    font-size: 2.8rem;
+  }
+  .topSection img {
+    visibility: visible;
+    display: block;
+    width: 100%;
+  }
+  .tsText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 5rem;
+  }
+  .tsText p {
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+  }
+  .tsText p br {
+    display: none;
+  }
+  .middleSection {
+    background-size: 150%;
+    background-position: 50% -500%;
+    max-height: 100%;
+    min-height: 90vh;
+    text-align: center;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    top: -38%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 100%;
+    width: 100%;
+  }
+  .container img {
+    width: 100%;
+  }
+  .container .text p {
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+  }
+  .container .text p br {
+    display: none;
+  }
+  .bottomSection {
+    background-image: none;
+    text-align: center;
+  }
+  .bottomContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .bottomContainer img {
+    display: block;
+    visibility: visible;
+    padding-top: 5rem;
+    width: 100%;
+  }
+  .bottomContainer .empty {
+    display: none;
+  }
+  .bottomContainer .tsText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 5rem;
+  }
+  .bottomContainer .tsText p {
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+  }
+  .bottomContainer .tsText p br {
+    display: none;
+  }
+  footer {
+    padding: 5rem 0rem;
+  }
+  footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer nav .footer-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer nav .footer-ul li {
+    padding: 2rem 0rem;
+  }
 }
 
 .attribution {

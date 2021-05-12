@@ -23,6 +23,11 @@ nav {
       flex: 1 1 15rem;
     }
 
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+
     .main-ul {
       @include flex(space-between, center, row);
       flex: 4 1 15rem;
