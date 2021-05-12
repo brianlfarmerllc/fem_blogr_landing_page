@@ -3,8 +3,10 @@
   nav {
     .logo-nav {
       flex: 2 1 20rem;
+
       .company-logo {
         padding-right: 0rem;
+        pointer-events: none;
       }
     }
     .login {
@@ -20,13 +22,46 @@
   // Intro Section
   nav {
     .logo-nav {
-      .burger {
-        visibility: visible;
-        display: block;
+      @include flex(start, center, column);
+      .mobil-container {
+        padding-bottom: 3rem;
+        width: 100%;
+        .burger {
+          visibility: visible;
+          display: block;
+        }
+        .active {
+          content: url("../assets/images/icon-close.svg");
+        }
+      }
+      #mobil-login {
+        @include flex(center, center, column);
+        button {
+          color: black;
+        }
       }
     }
+
+    .mobilUl-container {
+      text-align: center;
+      display: block;
+      background: white;
+      max-width: 300px;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
     #main-ul {
-      display: none;
+      display: block;
+      li {
+        padding: 2rem;
+        a {
+          color: black;
+        }
+        img {
+          content: url("../assets/images/icon-arrow-dark.svg");
+        }
+      }
     }
 
     #login {

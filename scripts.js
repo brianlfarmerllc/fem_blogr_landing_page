@@ -5,6 +5,7 @@ const navUl = document.querySelector("#main-ul")
 const navLi = document.querySelectorAll(".main-li")
 const inactiveUl = document.querySelectorAll(".dropUL-inactive")
 const arrow = document.querySelectorAll(".arrow")
+const burger = document.querySelector("#burgerX")
 
 // functions
 function toggleActive(event) {
@@ -38,9 +39,15 @@ function navOpen(event) {
     }
 }
 
+function burgerOpen(event) {
+    console.log(this)
+    this.classList.toggle("active")
+}
+
 
 // events
 
 login.addEventListener("click", toggleActive);
 links.addEventListener("click", toggleActive);
 navUl.addEventListener("click", navOpen);
+burger.addEventListener("click", burgerOpen);

@@ -18,14 +18,24 @@ nav {
     @include flex(start, center, row);
     flex: 1 1 30rem;
 
-    .company-logo {
-      padding-right: 6rem;
-      flex: 1 1 15rem;
+    .mobil-container {
+      @include flex(space-between, center, row);
+      .company-logo {
+        padding-right: 6rem;
+        flex: 1 1 15rem;
+      }
+
+      .burger {
+        display: none;
+        cursor: pointer;
+      }
     }
 
-    .burger {
+    #mobil-login {
       display: none;
-      cursor: pointer;
+    }
+    .mobilUl-container {
+      width: 100%;
     }
 
     .main-ul {

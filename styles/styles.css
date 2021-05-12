@@ -103,16 +103,40 @@ nav .logo-nav {
           flex: 1 1 30rem;
 }
 
-nav .logo-nav .company-logo {
+nav .logo-nav .mobil-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .logo-nav .mobil-container .company-logo {
   padding-right: 6rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 15rem;
           flex: 1 1 15rem;
 }
 
-nav .logo-nav .burger {
+nav .logo-nav .mobil-container .burger {
   display: none;
   cursor: pointer;
+}
+
+nav .logo-nav #mobil-login {
+  display: none;
+}
+
+nav .logo-nav .mobilUl-container {
+  width: 100%;
 }
 
 nav .logo-nav .main-ul {
@@ -659,6 +683,7 @@ footer nav .footer-ul li .ul li a:hover {
   }
   nav .logo-nav .company-logo {
     padding-right: 0rem;
+    pointer-events: none;
   }
   nav .login {
     -webkit-box-flex: 1;
@@ -671,12 +696,69 @@ footer nav .footer-ul li .ul li a:hover {
 }
 
 @media screen and (max-width: 1050px) {
-  nav .logo-nav .burger {
+  nav .logo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .logo-nav .mobil-container {
+    padding-bottom: 3rem;
+    width: 100%;
+  }
+  nav .logo-nav .mobil-container .burger {
     visibility: visible;
     display: block;
   }
+  nav .logo-nav .mobil-container .active {
+    content: url("../assets/images/icon-close.svg");
+  }
+  nav .logo-nav #mobil-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .logo-nav #mobil-login button {
+    color: black;
+  }
+  nav .mobilUl-container {
+    text-align: center;
+    display: block;
+    background: white;
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 8px;
+  }
   nav #main-ul {
-    display: none;
+    display: block;
+  }
+  nav #main-ul li {
+    padding: 2rem;
+  }
+  nav #main-ul li a {
+    color: black;
+  }
+  nav #main-ul li img {
+    content: url("../assets/images/icon-arrow-dark.svg");
   }
   nav #login {
     display: none;
