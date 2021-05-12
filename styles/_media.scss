@@ -1,23 +1,23 @@
-@media screen and (max-width: 900px) {
-  $header1: 3.8rem;
-  $header2: 2.8rem;
-  $header3: 2.6rem;
-  $header4: 2rem;
-  $text: 1.6rem;
-
+@media screen and (max-width: 1280px) {
   // Intro Section
-
-  p {
-    @include Overpass(300);
-    letter-spacing: default;
+  nav {
+    .logo-nav {
+      flex: 2 1 20rem;
+      .company-logo {
+        padding-right: 0rem;
+      }
+    }
+    .login {
+      flex: 1 1 20rem;
+    }
   }
-  .intro {
-    min-height: 90vh;
-    background-size: 375%;
-    background-image: url("../assets/images/bg-pattern-intro.svg"), $redGrade2;
-    background-position: 35% 35%;
+  .topSection {
+    background-size: 52%;
   }
+}
 
+@media screen and (max-width: 1050px) {
+  // Intro Section
   nav {
     .logo-nav {
       .burger {
@@ -33,6 +33,30 @@
       display: none;
     }
   }
+}
+
+@media screen and (max-width: 900px) {
+  $header1: 3.8rem;
+  $header2: 2.8rem;
+  $header3: 2.6rem;
+  $header4: 2rem;
+  $text: 1.6rem;
+
+  // Global
+
+  p {
+    @include Overpass(300);
+    letter-spacing: default;
+  }
+
+  // Intro Section
+  .intro {
+    min-height: 90vh;
+    background-size: 375%;
+    background-image: url("../assets/images/bg-pattern-intro.svg"), $redGrade2;
+    background-position: 35% 35%;
+  }
+
   .intro-text {
     @include flex(start, center, column);
     padding: 6rem 1.6em 0rem 1.6rem;

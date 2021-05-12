@@ -9,10 +9,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 h1 {
   font-size: 4.8rem;
 }
@@ -198,6 +194,14 @@ nav .logo-nav .main-ul .li1:hover .dropUl1 li a:hover {
   font-weight: 500;
 }
 
+nav .logo-nav .main-ul .li1:hover .dropUl1 li a {
+  pointer-events: auto;
+}
+
+nav .logo-nav .main-ul .li1 a {
+  pointer-events: none;
+}
+
 nav .logo-nav .main-ul .li2 {
   padding: 4rem 0rem;
 }
@@ -234,6 +238,14 @@ nav .logo-nav .main-ul .li2:hover .dropUl2 li a:hover {
   font-weight: 500;
 }
 
+nav .logo-nav .main-ul .li2:hover .dropUl2 li a {
+  pointer-events: auto;
+}
+
+nav .logo-nav .main-ul .li2 a {
+  pointer-events: none;
+}
+
 nav .logo-nav .main-ul .li3 {
   padding: 4rem 0rem;
 }
@@ -268,6 +280,14 @@ nav .logo-nav .main-ul .li3:hover .dropUl3 li a:hover {
   text-decoration: underline;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
+}
+
+nav .logo-nav .main-ul .li3:hover .dropUl3 li a {
+  pointer-events: auto;
+}
+
+nav .logo-nav .main-ul .li3 a {
+  pointer-events: none;
 }
 
 nav .logo-nav .main-ul .dropUL-inactive {
@@ -631,6 +651,38 @@ footer nav .footer-ul li .ul li a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1280px) {
+  nav .logo-nav {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 20rem;
+            flex: 2 1 20rem;
+  }
+  nav .logo-nav .company-logo {
+    padding-right: 0rem;
+  }
+  nav .login {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+  }
+  .topSection {
+    background-size: 52%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  nav .logo-nav .burger {
+    visibility: visible;
+    display: block;
+  }
+  nav #main-ul {
+    display: none;
+  }
+  nav #login {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   p {
     font-family: "Overpass", sans-serif;
@@ -643,16 +695,6 @@ footer nav .footer-ul li .ul li a:hover {
     background-image: url("../assets/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
     background-image: url("../assets/images/bg-pattern-intro.svg"), linear-gradient(to bottom, #ff8f70, #ff3d54);
     background-position: 35% 35%;
-  }
-  nav .logo-nav .burger {
-    visibility: visible;
-    display: block;
-  }
-  nav #main-ul {
-    display: none;
-  }
-  nav #login {
-    display: none;
   }
   .intro-text {
     display: -webkit-box;
