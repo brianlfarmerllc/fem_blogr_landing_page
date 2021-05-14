@@ -78,3 +78,22 @@ $text: 1.6rem;
     }
   }
 }
+
+@mixin dropMenuMobil() {
+  display: block;
+  position: relative;
+  left: 0px;
+  background: rgb(235, 235, 235);
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: none;
+  li {
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 1rem 0rem;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

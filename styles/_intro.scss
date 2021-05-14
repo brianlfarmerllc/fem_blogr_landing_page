@@ -1,6 +1,5 @@
 .intro {
   min-height: 60vh;
-  overflow: hidden;
   background-image: url("../assets/images/bg-pattern-intro.svg"), $redGrade;
   background-size: 140%;
   background-position: left center;
@@ -29,6 +28,9 @@ nav {
         display: none;
         cursor: pointer;
       }
+    }
+    hr {
+      display: none;
     }
 
     #mobil-login {

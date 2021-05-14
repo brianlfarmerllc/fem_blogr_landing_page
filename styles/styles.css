@@ -56,7 +56,6 @@ a {
 
 .intro {
   min-height: 60vh;
-  overflow: hidden;
   background-image: url("../assets/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
   background-image: url("../assets/images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-size: 140%;
@@ -129,6 +128,10 @@ nav .logo-nav .mobil-container .company-logo {
 nav .logo-nav .mobil-container .burger {
   display: none;
   cursor: pointer;
+}
+
+nav .logo-nav hr {
+  display: none;
 }
 
 nav .logo-nav #mobil-login {
@@ -697,6 +700,7 @@ footer nav .footer-ul li .ul li a:hover {
 
 @media screen and (max-width: 1050px) {
   nav .logo-nav {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -722,6 +726,13 @@ footer nav .footer-ul li .ul li a:hover {
   nav .logo-nav .mobil-container .active {
     content: url("../assets/images/icon-close.svg");
   }
+  nav .logo-nav hr {
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 0rem 2rem;
+  }
   nav .logo-nav #mobil-login {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -738,21 +749,53 @@ footer nav .footer-ul li .ul li a:hover {
             flex-direction: column;
   }
   nav .logo-nav #mobil-login button {
+    margin: 1rem;
     color: black;
   }
+  nav .logo-nav #mobil-login .active {
+    background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+    background: linear-gradient(to right, #ff8f70, #ff3d54);
+    color: white;
+  }
   nav .mobilUl-container {
+    position: absolute;
+    top: 15vh;
+    left: 200%;
     text-align: center;
     display: block;
     background: white;
     max-width: 300px;
     padding: 2rem;
     border-radius: 8px;
+    -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  }
+  nav .nav-open {
+    left: auto;
   }
   nav #main-ul {
     display: block;
   }
   nav #main-ul li {
     padding: 2rem;
+    text-decoration: none;
+  }
+  nav #main-ul li:hover ul {
+    display: block;
+    position: relative;
+    left: 0px;
+    background: #ebebeb;
+    margin-top: 2rem;
+    border-radius: 8px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  nav #main-ul li:hover ul li {
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 1rem 0rem;
+  }
+  nav #main-ul li:hover ul li a:hover {
+    text-decoration: none;
   }
   nav #main-ul li a {
     color: black;
