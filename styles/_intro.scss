@@ -43,7 +43,6 @@ nav {
     .main-ul {
       @include flex(space-between, center, row);
       flex: 4 1 15rem;
-      // pointer-events: z/;
 
       .main-li {
         flex: 1 1 15rem;
@@ -64,78 +63,12 @@ nav {
         }
       }
 
-      .li1 {
-        padding: 4rem 0rem;
-        &:hover {
-          .flip {
-            padding-right: 1rem;
-            padding-left: 0;
-            transform: rotate(180deg);
-          }
-          .dropUl1 {
-            @include dropMenu();
-            li {
-              a {
-                pointer-events: auto;
-              }
-            }
-          }
-        }
-        a {
-          pointer-events: none;
-        }
-      }
-
-      .li2 {
-        padding: 4rem 0rem;
-        &:hover {
-          .flip {
-            padding-right: 1rem;
-            padding-left: 0;
-            transform: rotate(180deg);
-          }
-          .dropUl2 {
-            @include dropMenu();
-            li {
-              a {
-                pointer-events: auto;
-              }
-            }
-          }
-        }
-        a {
-          pointer-events: none;
-        }
-      }
-
-      .li3 {
-        padding: 4rem 0rem;
-        &:hover {
-          .flip {
-            padding-right: 1rem;
-            padding-left: 0;
-            transform: rotate(180deg);
-          }
-          .dropUl3 {
-            @include dropMenu();
-            li {
-              a {
-                pointer-events: auto;
-              }
-            }
-          }
-        }
-        a {
-          pointer-events: none;
-        }
-      }
-
       .dropUL-inactive {
         display: none;
       }
 
       .dropUl {
-        @include dropMenu();
+        @include dropMenuMobil();
       }
     }
   }

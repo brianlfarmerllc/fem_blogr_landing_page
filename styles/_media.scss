@@ -18,6 +18,80 @@
   }
 }
 
+@media screen and (min-width: 1050px) {
+  nav {
+    .logo-nav {
+      .main-ul {
+        .li1 {
+          padding: 4rem 0rem;
+          &:hover {
+            .flip {
+              padding-right: 1rem;
+              padding-left: 0;
+              transform: rotate(180deg);
+            }
+            .dropUl1 {
+              @include dropMenu();
+              li {
+                a {
+                  pointer-events: auto;
+                }
+              }
+            }
+          }
+          a {
+            pointer-events: none;
+          }
+        }
+
+        .li2 {
+          padding: 4rem 0rem;
+          &:hover {
+            .flip {
+              padding-right: 1rem;
+              padding-left: 0;
+              transform: rotate(180deg);
+            }
+            .dropUl2 {
+              @include dropMenu();
+              li {
+                a {
+                  pointer-events: auto;
+                }
+              }
+            }
+          }
+          a {
+            pointer-events: none;
+          }
+        }
+
+        .li3 {
+          padding: 4rem 0rem;
+          &:hover {
+            .flip {
+              padding-right: 1rem;
+              padding-left: 0;
+              transform: rotate(180deg);
+            }
+            .dropUl3 {
+              @include dropMenu();
+              li {
+                a {
+                  pointer-events: auto;
+                }
+              }
+            }
+          }
+          a {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1050px) {
   // Intro Section
   nav {
@@ -77,11 +151,6 @@
       li {
         padding: 2rem;
         text-decoration: none;
-        &:hover {
-          ul {
-            @include dropMenuMobil();
-          }
-        }
         a {
           color: black;
         }

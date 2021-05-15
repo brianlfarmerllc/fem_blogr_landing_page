@@ -185,165 +185,28 @@ nav .logo-nav .main-ul .main-li .active {
           transform: rotate(180deg);
 }
 
-nav .logo-nav .main-ul .li1 {
-  padding: 4rem 0rem;
-}
-
-nav .logo-nav .main-ul .li1:hover .flip {
-  padding-right: 1rem;
-  padding-left: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-nav .logo-nav .main-ul .li1:hover .dropUl1 {
-  display: block;
-  position: absolute;
-  left: -3rem;
-  background: white;
-  margin-top: 2rem;
-  border-radius: 8px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-}
-
-nav .logo-nav .main-ul .li1:hover .dropUl1 li {
-  margin: 3rem 5rem 3rem 3rem;
-}
-
-nav .logo-nav .main-ul .li1:hover .dropUl1 li a {
-  color: black;
-}
-
-nav .logo-nav .main-ul .li1:hover .dropUl1 li a:hover {
-  text-decoration: underline;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-}
-
-nav .logo-nav .main-ul .li1:hover .dropUl1 li a {
-  pointer-events: auto;
-}
-
-nav .logo-nav .main-ul .li1 a {
-  pointer-events: none;
-}
-
-nav .logo-nav .main-ul .li2 {
-  padding: 4rem 0rem;
-}
-
-nav .logo-nav .main-ul .li2:hover .flip {
-  padding-right: 1rem;
-  padding-left: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-nav .logo-nav .main-ul .li2:hover .dropUl2 {
-  display: block;
-  position: absolute;
-  left: -3rem;
-  background: white;
-  margin-top: 2rem;
-  border-radius: 8px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-}
-
-nav .logo-nav .main-ul .li2:hover .dropUl2 li {
-  margin: 3rem 5rem 3rem 3rem;
-}
-
-nav .logo-nav .main-ul .li2:hover .dropUl2 li a {
-  color: black;
-}
-
-nav .logo-nav .main-ul .li2:hover .dropUl2 li a:hover {
-  text-decoration: underline;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-}
-
-nav .logo-nav .main-ul .li2:hover .dropUl2 li a {
-  pointer-events: auto;
-}
-
-nav .logo-nav .main-ul .li2 a {
-  pointer-events: none;
-}
-
-nav .logo-nav .main-ul .li3 {
-  padding: 4rem 0rem;
-}
-
-nav .logo-nav .main-ul .li3:hover .flip {
-  padding-right: 1rem;
-  padding-left: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-nav .logo-nav .main-ul .li3:hover .dropUl3 {
-  display: block;
-  position: absolute;
-  left: -3rem;
-  background: white;
-  margin-top: 2rem;
-  border-radius: 8px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-}
-
-nav .logo-nav .main-ul .li3:hover .dropUl3 li {
-  margin: 3rem 5rem 3rem 3rem;
-}
-
-nav .logo-nav .main-ul .li3:hover .dropUl3 li a {
-  color: black;
-}
-
-nav .logo-nav .main-ul .li3:hover .dropUl3 li a:hover {
-  text-decoration: underline;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-}
-
-nav .logo-nav .main-ul .li3:hover .dropUl3 li a {
-  pointer-events: auto;
-}
-
-nav .logo-nav .main-ul .li3 a {
-  pointer-events: none;
-}
-
 nav .logo-nav .main-ul .dropUL-inactive {
   display: none;
 }
 
 nav .logo-nav .main-ul .dropUl {
   display: block;
-  position: absolute;
-  left: -3rem;
-  background: white;
+  position: relative;
+  left: 0px;
+  background: #ebebeb;
   margin-top: 2rem;
   border-radius: 8px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 nav .logo-nav .main-ul .dropUl li {
-  margin: 3rem 5rem 3rem 3rem;
-}
-
-nav .logo-nav .main-ul .dropUl li a {
-  color: black;
+  margin: 1rem 3rem 1rem 3rem;
+  padding: 1rem 0rem;
 }
 
 nav .logo-nav .main-ul .dropUl li a:hover {
-  text-decoration: underline;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+  text-decoration: none;
 }
 
 nav .login {
@@ -698,6 +561,117 @@ footer nav .footer-ul li .ul li a:hover {
   }
 }
 
+@media screen and (min-width: 1050px) {
+  nav .logo-nav .main-ul .li1 {
+    padding: 4rem 0rem;
+  }
+  nav .logo-nav .main-ul .li1:hover .flip {
+    padding-right: 1rem;
+    padding-left: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  nav .logo-nav .main-ul .li1:hover .dropUl1 {
+    display: block;
+    position: absolute;
+    left: -3rem;
+    background: white;
+    margin-top: 2rem;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  nav .logo-nav .main-ul .li1:hover .dropUl1 li {
+    margin: 3rem 5rem 3rem 3rem;
+  }
+  nav .logo-nav .main-ul .li1:hover .dropUl1 li a {
+    color: black;
+  }
+  nav .logo-nav .main-ul .li1:hover .dropUl1 li a:hover {
+    text-decoration: underline;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  nav .logo-nav .main-ul .li1:hover .dropUl1 li a {
+    pointer-events: auto;
+  }
+  nav .logo-nav .main-ul .li1 a {
+    pointer-events: none;
+  }
+  nav .logo-nav .main-ul .li2 {
+    padding: 4rem 0rem;
+  }
+  nav .logo-nav .main-ul .li2:hover .flip {
+    padding-right: 1rem;
+    padding-left: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  nav .logo-nav .main-ul .li2:hover .dropUl2 {
+    display: block;
+    position: absolute;
+    left: -3rem;
+    background: white;
+    margin-top: 2rem;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  nav .logo-nav .main-ul .li2:hover .dropUl2 li {
+    margin: 3rem 5rem 3rem 3rem;
+  }
+  nav .logo-nav .main-ul .li2:hover .dropUl2 li a {
+    color: black;
+  }
+  nav .logo-nav .main-ul .li2:hover .dropUl2 li a:hover {
+    text-decoration: underline;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  nav .logo-nav .main-ul .li2:hover .dropUl2 li a {
+    pointer-events: auto;
+  }
+  nav .logo-nav .main-ul .li2 a {
+    pointer-events: none;
+  }
+  nav .logo-nav .main-ul .li3 {
+    padding: 4rem 0rem;
+  }
+  nav .logo-nav .main-ul .li3:hover .flip {
+    padding-right: 1rem;
+    padding-left: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  nav .logo-nav .main-ul .li3:hover .dropUl3 {
+    display: block;
+    position: absolute;
+    left: -3rem;
+    background: white;
+    margin-top: 2rem;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+  nav .logo-nav .main-ul .li3:hover .dropUl3 li {
+    margin: 3rem 5rem 3rem 3rem;
+  }
+  nav .logo-nav .main-ul .li3:hover .dropUl3 li a {
+    color: black;
+  }
+  nav .logo-nav .main-ul .li3:hover .dropUl3 li a:hover {
+    text-decoration: underline;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  nav .logo-nav .main-ul .li3:hover .dropUl3 li a {
+    pointer-events: auto;
+  }
+  nav .logo-nav .main-ul .li3 a {
+    pointer-events: none;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   nav .logo-nav {
     position: relative;
@@ -778,23 +752,6 @@ footer nav .footer-ul li .ul li a:hover {
   }
   nav #main-ul li {
     padding: 2rem;
-    text-decoration: none;
-  }
-  nav #main-ul li:hover ul {
-    display: block;
-    position: relative;
-    left: 0px;
-    background: #ebebeb;
-    margin-top: 2rem;
-    border-radius: 8px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  nav #main-ul li:hover ul li {
-    margin: 1rem 3rem 1rem 3rem;
-    padding: 1rem 0rem;
-  }
-  nav #main-ul li:hover ul li a:hover {
     text-decoration: none;
   }
   nav #main-ul li a {
