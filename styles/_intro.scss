@@ -11,7 +11,6 @@ nav {
   margin: 0 auto;
   min-height: 15vh;
   @include flex(space-between, center, row);
-
   .logo-nav {
     padding: 3rem 0rem;
     @include flex(start, center, row);
