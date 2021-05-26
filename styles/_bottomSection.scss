@@ -1,5 +1,5 @@
 .bottomSection {
-  min-height: 110vh;
+  min-height: 900px;
   background-image: url("../assets/images/illustration-laptop-desktop.svg");
   background-size: 60%;
   background-repeat: no-repeat;
@@ -7,7 +7,7 @@
 }
 
 .bottomContainer {
-  min-height: 110vh;
+  min-height: 900px;
   width: 85%;
   margin: 0 auto;
   @include flex(space-between, center, row);
@@ -18,8 +18,14 @@
     flex: 1 1 30rem;
   }
   .tsText {
+    width: 85%;
+    margin: auto;
     flex: 1 1 30rem;
     @include flex(center, start, column);
+
+    .text {
+      padding-top: 5rem;
+    }
 
     p {
       color: $bodyCopy;

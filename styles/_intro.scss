@@ -1,5 +1,6 @@
 .intro {
-  min-height: 60vh;
+  min-height: 600px;
+  max-height: 600px;
   background-image: url("../assets/images/bg-pattern-intro.svg"), $redGrade;
   background-size: 140%;
   background-position: left center;
@@ -100,8 +101,7 @@ nav {
 .intro-text {
   @include flex(center, center, column);
   color: $whiteText;
-  min-height: 50vh;
-  padding-bottom: 10rem;
+  padding-top: 7rem;
   h1 {
     font-size: $header1;
     @include Overpass($weight: 300);

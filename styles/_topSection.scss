@@ -1,7 +1,7 @@
 .topSection {
-  min-height: 110vh;
+  min-height: 900px;
   background-image: url("../assets/images/illustration-editor-desktop.svg");
-  background-size: 57%;
+  background-size: 55%;
   background-repeat: no-repeat;
   background-position: 135% center;
 
@@ -13,20 +13,20 @@
   img {
     display: none;
   }
-}
+  .tsText {
+    width: 85%;
+    margin: 0 auto;
+    @include flex(center, start, column);
+    .text {
+      padding-top: 5rem;
+      width: 50%;
+    }
 
-.tsText {
-  width: 85%;
-  margin: 0 auto;
-  @include flex(center, start, column);
-  .text {
-    padding-top: 5rem;
-  }
-
-  p {
-    color: $bodyCopy;
-    padding-top: 2rem;
-    line-height: 2.7rem;
-    letter-spacing: 0.1rem;
+    p {
+      color: $bodyCopy;
+      padding-top: 2rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.1rem;
+    }
   }
 }

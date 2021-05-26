@@ -166,7 +166,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   $header1: 3.8rem;
   $header2: 2.8rem;
   $header3: 2.6rem;
@@ -216,17 +216,19 @@
       display: block;
       width: 100%;
     }
-  }
+    .tsText {
+      @include flex(center, center, column);
+      padding-bottom: 5rem;
+      .text {
+        width: 100%;
+      }
 
-  .tsText {
-    @include flex(center, center, column);
-    padding-bottom: 5rem;
-
-    p {
-      font-size: $text;
-      padding: 1rem 1rem;
-      br {
-        display: none;
+      p {
+        font-size: $text;
+        padding: 1rem 1rem;
+        br {
+          display: none;
+        }
       }
     }
   }
@@ -243,7 +245,7 @@
 
   .container {
     position: absolute;
-    top: -38%;
+    top: -200px;
     @include flex(space-between, center, column);
     max-height: 100%;
     width: 100%;
@@ -293,6 +295,7 @@
   }
   //   Footer
   footer {
+    // text-align: center;
     padding: 5rem 0rem;
     nav {
       @include flex(space-between, center, column);

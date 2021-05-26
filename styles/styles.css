@@ -9,6 +9,12 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 4.8rem;
 }
@@ -55,7 +61,8 @@ a {
 }
 
 .intro {
-  min-height: 60vh;
+  min-height: 600px;
+  max-height: 600px;
   background-image: url("../assets/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
   background-image: url("../assets/images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-size: 140%;
@@ -266,8 +273,7 @@ nav .login .active {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  min-height: 50vh;
-  padding-bottom: 10rem;
+  padding-top: 7rem;
 }
 
 .intro-text h1 {
@@ -308,9 +314,9 @@ nav .login .active {
 }
 
 .topSection {
-  min-height: 110vh;
+  min-height: 900px;
   background-image: url("../assets/images/illustration-editor-desktop.svg");
-  background-size: 57%;
+  background-size: 55%;
   background-repeat: no-repeat;
   background-position: 135% center;
 }
@@ -325,7 +331,7 @@ nav .login .active {
   display: none;
 }
 
-.tsText {
+.topSection .tsText {
   width: 85%;
   margin: 0 auto;
   display: -webkit-box;
@@ -343,11 +349,12 @@ nav .login .active {
           flex-direction: column;
 }
 
-.tsText .text {
+.topSection .tsText .text {
   padding-top: 5rem;
+  width: 50%;
 }
 
-.tsText p {
+.topSection .tsText p {
   color: #4b5862;
   padding-top: 2rem;
   line-height: 2.7rem;
@@ -359,7 +366,7 @@ nav .login .active {
   background-image: url(../assets/images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
   background-repeat: no-repeat;
   background-position: -60% 80%;
-  max-height: 50vh;
+  max-height: 400px;
   border-bottom-left-radius: 100px 60px;
   border-top-right-radius: 100px 60px;
 }
@@ -380,7 +387,7 @@ nav .login .active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-height: 50vh;
+  max-height: 400px;
 }
 
 .container .img {
@@ -391,6 +398,8 @@ nav .login .active {
 }
 
 .container .text {
+  width: 85%;
+  margin: 0 auto;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
           flex: 1 1 30rem;
@@ -407,8 +416,12 @@ nav .login .active {
   color: white;
 }
 
+.container .text br {
+  display: none;
+}
+
 .bottomSection {
-  min-height: 110vh;
+  min-height: 900px;
   background-image: url("../assets/images/illustration-laptop-desktop.svg");
   background-size: 60%;
   background-repeat: no-repeat;
@@ -416,7 +429,7 @@ nav .login .active {
 }
 
 .bottomContainer {
-  min-height: 110vh;
+  min-height: 900px;
   width: 85%;
   margin: 0 auto;
   display: -webkit-box;
@@ -445,6 +458,8 @@ nav .login .active {
 }
 
 .bottomContainer .tsText {
+  width: 85%;
+  margin: auto;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
           flex: 1 1 30rem;
@@ -461,6 +476,10 @@ nav .login .active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.bottomContainer .tsText .text {
+  padding-top: 5rem;
 }
 
 .bottomContainer .tsText p {
@@ -497,6 +516,7 @@ footer nav .logo-nav {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 15rem;
           flex: 1 1 15rem;
+  padding: 0rem 0rem 3rem 0rem;
 }
 
 footer nav .footer-ul {
@@ -765,7 +785,7 @@ footer nav .footer-ul li .ul li a:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   p {
     font-family: "Overpass", sans-serif;
     font-weight: 300;
@@ -828,7 +848,7 @@ footer nav .footer-ul li .ul li a:hover {
     display: block;
     width: 100%;
   }
-  .tsText {
+  .topSection .tsText {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -844,11 +864,14 @@ footer nav .footer-ul li .ul li a:hover {
             flex-direction: column;
     padding-bottom: 5rem;
   }
-  .tsText p {
+  .topSection .tsText .text {
+    width: 100%;
+  }
+  .topSection .tsText p {
     font-size: 1.6rem;
     padding: 1rem 1rem;
   }
-  .tsText p br {
+  .topSection .tsText p br {
     display: none;
   }
   .middleSection {
@@ -861,7 +884,7 @@ footer nav .footer-ul li .ul li a:hover {
   }
   .container {
     position: absolute;
-    top: -38%;
+    top: -200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

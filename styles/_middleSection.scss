@@ -2,7 +2,7 @@
   background-image: url(../assets/images/bg-pattern-circles.svg), $blueGrade;
   background-repeat: no-repeat;
   background-position: -60% 80%;
-  max-height: 50vh;
+  max-height: 400px;
   border-bottom-left-radius: 100px 60px;
   border-top-right-radius: 100px 60px;
 }
@@ -11,7 +11,7 @@
   width: 85%;
   margin: 0 auto;
   @include flex(space-between, center, row);
-  max-height: 50vh;
+  max-height: 400px;
 
   .img {
     flex: 1 1 30rem;
@@ -19,6 +19,8 @@
   }
 
   .text {
+    width: 85%;
+    margin: 0 auto;
     flex: 1 1 30rem;
     h3 {
       color: $whiteText;
@@ -28,6 +30,9 @@
       line-height: 2.7rem;
       letter-spacing: 0.1rem;
       color: $whiteText;
+    }
+    br {
+      display: none;
     }
   }
 }
