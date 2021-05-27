@@ -876,9 +876,7 @@ footer nav .footer-ul li .ul li a:hover {
     display: none;
   }
   .middleSection {
-    background-size: 150%;
-    background-position: 50% -500%;
-    max-height: 100%;
+    background-position: center top -500px, center;
     min-height: 90vh;
     text-align: center;
     position: relative;
