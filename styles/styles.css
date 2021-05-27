@@ -752,7 +752,8 @@ footer nav .footer-ul li .ul li a:hover {
     color: white;
   }
   nav .mobilUl-container {
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     top: 15vh;
     left: 200%;
     text-align: center;
